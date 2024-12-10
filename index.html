@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizen-App</title>
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+</head>
+<body onload="init()">
+    <header>
+        <h1>Notizen-App</h1>
+        <p>Verwalte deine Notizen, Archiviere sie oder verschiebe sie in den Papierkorb.</p>
+    </header>
+
+    <main>
+        <section class="note-input">
+            <input type="text" id="noteTitleInput" placeholder="Titel eingeben" />
+            <textarea id="noteContentInput" placeholder="Inhalt eingeben"></textarea>
+            <button onclick="addNote()">Notiz speichern</button>
+        </section>
+
+        <section class="notes-section">
+            <h2>Hauptbereich</h2>
+            <div id="content"></div>
+        </section>
+
+        <section class="notes-section">
+            <h2>Archiv</h2>
+            <div id="archiveContent"></div>
+        </section>
+
+        <section class="notes-section">
+            <h2>Papierkorb</h2>
+            <div id="trashContent"></div>
+        </section>
+    </main>
+
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

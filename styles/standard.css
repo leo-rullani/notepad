@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    scroll-behavior: smooth; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.notes-section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.note {
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.note h3 {
+    margin: 0;
+}
+
+.note p {
+    margin: 5px 0;
+}
